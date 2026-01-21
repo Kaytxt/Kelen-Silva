@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação Renascimento Kundalini - Kelen Silva</title>
+    <meta name="description" content="Formação de Facilitadores & Despertar da Própria Energia. Um caminho profundo de despertar consciente da energia vital com Kelen Silva.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-purple': '#a066b1',
+                        'brand-teal': '#00a896',
+                        'brand-peach': '#fab178',
+                        'brand-light': '#fafafa',
+                        'brand-dark': '#654170',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-insta': 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #fafafa; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        .gradient-brand { background: linear-gradient(135deg, #a066b1 0%, #654170 100%); }
+        .gradient-text-brand {
+            background: linear-gradient(135deg, #a066b1 0%, #654170 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .shadow-brand { box-shadow: 0 10px 40px rgba(160, 102, 177, 0.2); }
+        
+        .hover-lift { transition: all 0.3s ease; }
+        @media (min-width: 768px) {
+            .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(160, 102, 177, 0.3); }
+        }
+        
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse-soft { animation: pulse-soft 3s ease-in-out infinite; }
+        
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .gradient-animate {
+            background: linear-gradient(270deg, #a066b1, #00a896, #fab178);
+            background-size: 200% 200%;
+            animation: gradient-shift 8s ease infinite;
+        }
+
+        .bg-pattern {
+            background-image: radial-gradient(circle, rgba(160, 102, 177, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .whatsapp-float {
+            position: fixed; bottom: 20px; right: 20px;
+            width: 56px; height: 56px;
+            background-color: #25d366; color: #FFF;
+            border-radius: 50%; text-align: center;
+            font-size: 28px; box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+            z-index: 100; display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        @media (min-width: 768px) {
+            .whatsapp-float {
+                bottom: 30px; right: 30px;
+                width: 60px; height: 60px;
+                font-size: 32px;
+            }
+        }
+        
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob { animation: blob 7s infinite; }
+        .animation-delay-2000 { animation-delay: 2s; }
+        .animation-delay-4000 { animation-delay: 4s; }
+
+        .rounded-soft {
+            border-radius: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .rounded-soft { border-radius: 2rem; }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <a href="https://wa.me/5551981502140?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20Forma%C3%A7%C3%A3o%20Renascimento%20Kundalini" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-12 md:py-20">
+        <div class="absolute inset-0 overflow-hidden bg-pattern -z-10">
+            <div class="absolute -top-40 -right-40 w-60 h-60 md:w-80 md:h-80 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob" style="background-color: #a066b1;"></div>
+            <div class="absolute -bottom-40 -left-40 w-60 h-60 md:w-80 md:h-80 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000" style="background-color: #fab178;"></div>
+            <div class="absolute top-1/2 left-1/2 w-60 h-60 md:w-80 md:h-80 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-4000" style="background-color: #00a896;"></div>
+        </div>
+
+        <div class="relative max-w-6xl mx-auto text-center z-10 w-full flex flex-col items-center">
+            <div class="mb-6 md:mb-8" data-aos="fade-down">
+                <img src="logo-kelen.png" alt="Logo Kelen Silva Guia da Alma" class="w-32 sm:w-40 md:w-48 lg:w-64 mx-auto drop-shadow-xl">
+            </div>
+
+            <div class="mb-4 md:mb-6" data-aos="fade-down" data-aos-delay="100">
+                <p class="text-brand-dark mt-2 md:mt-4 font-medium text-sm sm:text-base md:text-lg uppercase tracking-wider px-2">Formação de Facilitadores & Despertar da Própria Energia</p>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 text-brand-dark leading-tight px-2" data-aos="fade-up" data-aos-delay="200">
+                O Renascimento Kundalini não <span class="gradient-text-brand">acontece fora</span>.
+            </h1>
+            
+            <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif text-gray-700 mb-6 md:mb-10 max-w-4xl mx-auto px-4" data-aos="fade-up" data-aos-delay="250">
+                Ele desperta quando você está pronta para sustentar a sua própria energia.
+            </h2>
+
+            <div class="glass-effect rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 max-w-4xl mx-auto mb-8 md:mb-12 text-left shadow-2xl border border-white/50" data-aos="fade-up" data-aos-delay="300">
+                <p class="text-base sm:text-lg md:text-xl text-gray-700 mb-4 md:mb-6 leading-relaxed">
+                    A <strong>Formação Renascimento Kundalini</strong> é um caminho profundo de despertar consciente da energia vital, criado para quem sente o chamado de:
+                </p>
+                <ul class="space-y-3 md:space-y-4">
+                    <li class="flex items-start gap-2 md:gap-3">
+                        <span class="bg-brand-purple/10 text-brand-purple p-1.5 md:p-2 rounded-full text-sm md:text-base flex-shrink-0">✨</span>
+                        <span class="text-sm sm:text-base md:text-lg text-gray-700">Ativar e sustentar a própria Kundalini com segurança</span>
+                    </li>
+                    <li class="flex items-start gap-2 md:gap-3">
+                        <span class="bg-brand-purple/10 text-brand-purple p-1.5 md:p-2 rounded-full text-sm md:text-base flex-shrink-0">✨</span>
+                        <span class="text-sm sm:text-base md:text-lg text-gray-700">Tornar-se Facilitadora(o) de Energia Kundalini, com ética e presença</span>
+                    </li>
+                    <li class="flex items-start gap-2 md:gap-3">
+                        <span class="bg-brand-purple/10 text-brand-purple p-1.5 md:p-2 rounded-full text-sm md:text-base flex-shrink-0">✨</span>
+                        <span class="text-sm sm:text-base md:text-lg text-gray-700">Viver um Renascimento Kundalini espiritual integrado ao corpo, à vida e ao propósito</span>
+                    </li>
+                </ul>
+                <div class="mt-6 md:mt-8 pt-4 md:pt-6 border-t border-brand-purple/10 text-center">
+                    <p class="font-bold text-brand-dark text-lg sm:text-xl md:text-xl">
+                        Este não é apenas um curso. É um processo de lembrança da sua essência.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center w-full px-4" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://wa.me/5551981502140?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20Forma%C3%A7%C3%A3o%20Renascimento%20Kundalini" class="gradient-animate text-white px-8 sm:px-10 py-4 sm:py-5 rounded-full font-bold text-lg sm:text-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center">
+                    QUERO SABER MAIS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAMADO DA ALMA -->
+    <section class="py-12 md:py-20 px-4 gradient-brand relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-pattern"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 md:mb-10 px-2" data-aos="fade-up">
+                🌿 Um Chamado da Alma
+            </h2>
+            
+            <div class="space-y-6 md:space-y-8 text-white text-base sm:text-lg md:text-xl leading-relaxed font-light">
+                <p data-aos="fade-up" data-aos-delay="100" class="px-2">
+                    Talvez você já tenha feito terapias. Talvez já tenha buscado respostas, cursos, ativações, iniciações.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="200" class="font-bold text-xl sm:text-2xl md:text-3xl px-2">
+                    E ainda assim… sente que existe algo mais profundo pedindo para despertar.
+                </p>
+                
+                <div data-aos="zoom-in" data-aos-delay="300" class="my-8 md:my-12">
+                    <img src="kelen-bracos-abertos.png" alt="Kelen Silva de braços abertos na natureza" class="w-full max-w-2xl mx-auto rounded-soft shadow-2xl border-2 md:border-4 border-white/20">
+                </div>
+
+                <p data-aos="fade-up" data-aos-delay="400" class="px-2">
+                    O <strong>Renascimento Kundalini</strong> surge exatamente nesse ponto:
+                </p>
+                <p data-aos="fade-up" data-aos-delay="500" class="text-lg sm:text-xl md:text-2xl font-bold bg-white/20 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/30 shadow-lg">
+                    Quando a alma está pronta para parar de buscar fora e começar a sustentar a própria energia com consciência.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section class="py-10 md:py-24 px-4 bg-brand-light">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-8 md:mb-16 text-brand-dark px-2" data-aos="fade-up">
+                🌸 Para Quem É Esta Formação?
+            </h2>
+
+            <!-- VERSÃO MOBILE: Lista Compacta -->
+            <div class="block md:hidden space-y-2 mb-6 max-w-lg mx-auto" data-aos="fade-up">
+                <div class="bg-white rounded-lg p-3 shadow-sm flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">🙏</span>
+                    <p class="text-gray-700 font-medium text-sm">Sente um chamado espiritual verdadeiro</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">🛡️</span>
+                    <p class="text-gray-700 font-medium text-sm">Deseja trabalhar energia com segurança</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">🧠</span>
+                    <p class="text-gray-700 font-medium text-sm">Quer compreender Kundalini de forma consciente</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">📚</span>
+                    <p class="text-gray-700 font-medium text-sm">Busca formação séria, profunda e ética</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">👐</span>
+                    <p class="text-gray-700 font-medium text-sm">Deseja servir como facilitadora(o)</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">⚓</span>
+                    <p class="text-gray-700 font-medium text-sm">Quer viver o próprio despertar com ancoragem</p>
+                </div>
+            </div>
+
+            <!-- VERSÃO DESKTOP: Grid Original -->
+            <div class="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-16">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift border-t-4 border-brand-purple" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">🙏</div>
+                    <p class="text-gray-700 font-medium text-base md:text-lg">Sente um chamado espiritual verdadeiro</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift border-t-4 border-brand-teal" data-aos="fade-up" data-aos-delay="150">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">🛡️</div>
+                    <p class="text-gray-700 font-medium text-base md:text-lg">Deseja trabalhar energia sem exageros ou riscos</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift border-t-4 border-brand-peach" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">🧠</div>
+                    <p class="text-gray-700 font-medium text-base md:text-lg">Quer compreender a Kundalini de forma consciente</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift border-t-4 border-brand-purple" data-aos="fade-up" data-aos-delay="250">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">📚</div>
+                    <p class="text-gray-700 font-medium text-base md:text-lg">Busca uma formação séria, profunda e ética</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift border-t-4 border-brand-teal" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">👐</div>
+                    <p class="text-gray-700 font-medium text-base md:text-lg">Sente o desejo de servir como facilitadora(o)</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift border-t-4 border-brand-peach" data-aos="fade-up" data-aos-delay="350">
+                    <div class="text-3xl md:text-4xl mb-3 md:mb-4">⚓</div>
+                    <p class="text-gray-700 font-medium text-base md:text-lg">Ou quer viver o próprio despertar com ancoragem</p>
+                </div>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-gradient-to-r from-brand-peach/20 to-brand-peach/40 border-l-4 md:border-l-8 border-brand-peach rounded-r-2xl p-4 md:p-8 shadow-md" data-aos="zoom-in">
+                <p class="text-brand-dark font-bold text-base sm:text-lg md:text-2xl text-center">
+                    ⚠️ Esta formação não é para curiosos.<br>
+                    <span class="text-xs sm:text-sm md:text-base font-normal text-gray-800 mt-2 block">É para quem sente que já não dá mais para adiar o próprio Renascimento Kundalini.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O QUE É KUNDALINI -->
+    <section class="py-12 md:py-20 px-4 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand-purple/5 opacity-50 bg-pattern z-0"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 md:mb-16 text-center text-brand-dark px-2" data-aos="fade-up">
+                🔮 O Que É o Renascimento Kundalini?
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div data-aos="fade-right" data-aos-delay="100" class="order-2 md:order-1">
+                    <img src="kelen-kundalini.png" alt="Sessão de Renascimento Kundalini" class="rounded-soft shadow-2xl w-full object-cover h-auto max-h-[400px] md:max-h-[500px]">
+                </div>
+
+                <div class="glass-effect rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-12 shadow-xl space-y-6 md:space-y-8 border border-white/70 order-1 md:order-2" data-aos="fade-left" data-aos-delay="200">
+                    <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+                        O Renascimento Kundalini é um processo de despertar consciente da energia vital, respeitando o <strong>corpo</strong>, a <strong>psique</strong>, o <strong>campo emocional</strong> e o <strong>tempo da alma</strong>.
+                    </p>
+                    
+                    <div class="space-y-4 md:space-y-6">
+                        <div class="bg-white p-4 md:p-6 rounded-xl md:rounded-2xl border-l-4 border-brand-purple shadow-sm">
+                            <p class="text-sm sm:text-base md:text-lg text-gray-600 mb-2">Aqui você aprende que Kundalini não é força.</p>
+                            <p class="text-brand-purple font-bold text-lg sm:text-xl">Ela é inteligência espiritual em movimento.</p>
+                        </div>
+                        <div class="bg-white p-4 md:p-6 rounded-xl md:rounded-2xl border-l-4 border-brand-teal shadow-sm">
+                            <p class="text-sm sm:text-base md:text-lg text-gray-600 mb-2">Não se trata de ativar rápido.</p>
+                            <p class="text-brand-teal font-bold text-lg sm:text-xl">Trata-se de sustentar com maturidade energética.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O QUE TORNA DIFERENTE -->
+    <section class="py-10 md:py-24 px-4 bg-brand-light">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-3 md:mb-6 text-brand-dark px-2" data-aos="fade-up">
+                💎 O Que Torna Esta Formação Diferente?
+            </h2>
+            <p class="text-center text-sm sm:text-base md:text-xl text-gray-600 mb-6 md:mb-12 max-w-3xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+                Formação criada para romper com excessos e caminhos desancorados.
+            </p>
+
+            <!-- VERSÃO MOBILE: Lista Compacta -->
+            <div class="block md:hidden space-y-3 mb-8 max-w-lg mx-auto" data-aos="fade-up">
+                <div class="bg-white rounded-xl p-4 shadow-sm border-l-4 border-brand-purple flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">🎯</span>
+                    <div>
+                        <h3 class="font-bold text-brand-dark text-sm">Método Próprio</h3>
+                        <p class="text-gray-500 text-xs">Estruturado e seguro</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm border-l-4 border-brand-teal flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">❤️</span>
+                    <div>
+                        <h3 class="font-bold text-brand-dark text-sm">Condução Ética</h3>
+                        <p class="text-gray-500 text-xs">Consciente e responsável</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm border-l-4 border-brand-peach flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">📜</span>
+                    <div>
+                        <h3 class="font-bold text-brand-dark text-sm">Certificação Profissionalizante</h3>
+                        <p class="text-gray-500 text-xs">Reconhecida e válida</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm border-l-4 border-brand-purple flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">🧘</span>
+                    <div>
+                        <h3 class="font-bold text-brand-dark text-sm">Preparação Completa</h3>
+                        <p class="text-gray-500 text-xs">Corpo e campo energético</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm border-l-4 border-brand-teal flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">⚡</span>
+                    <div>
+                        <h3 class="font-bold text-brand-dark text-sm">Sustentação Real</h3>
+                        <p class="text-gray-500 text-xs">Energia no cotidiano</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm border-l-4 border-brand-peach flex items-center gap-3">
+                    <span class="text-2xl flex-shrink-0">👁️</span>
+                    <div>
+                        <h3 class="font-bold text-brand-dark text-sm">Clareza e Responsabilidade</h3>
+                        <p class="text-gray-500 text-xs">Para facilitar com consciência</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VERSÃO DESKTOP: Grid Original -->
+            <div class="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-16">
+                 <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift text-center group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 mx-auto bg-brand-purple/10 rounded-full flex items-center justify-center text-2xl md:text-3xl mb-3 md:mb-4 group-hover:bg-brand-purple group-hover:text-white transition-colors">🎯</div>
+                    <h3 class="text-lg md:text-xl font-bold text-brand-dark">Método Próprio</h3>
+                    <p class="text-gray-500 mt-2 text-sm md:text-base">Estruturado e seguro</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift text-center group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 mx-auto bg-brand-teal/10 rounded-full flex items-center justify-center text-2xl md:text-3xl mb-3 md:mb-4 group-hover:bg-brand-teal group-hover:text-white transition-colors">❤️</div>
+                    <h3 class="text-lg md:text-xl font-bold text-brand-dark">Condução Ética</h3>
+                    <p class="text-gray-500 mt-2 text-sm md:text-base">Consciente e responsável</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift text-center group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 mx-auto bg-brand-peach/10 rounded-full flex items-center justify-center text-2xl md:text-3xl mb-3 md:mb-4 group-hover:bg-brand-peach group-hover:text-white transition-colors">📜</div>
+                    <h3 class="text-lg md:text-xl font-bold text-brand-dark">Certificação</h3>
+                    <p class="text-gray-500 mt-2 text-sm md:text-base">Profissionalizante</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift text-center group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 mx-auto bg-brand-purple/10 rounded-full flex items-center justify-center text-2xl md:text-3xl mb-3 md:mb-4 group-hover:bg-brand-purple group-hover:text-white transition-colors">🧘</div>
+                    <h3 class="text-lg md:text-xl font-bold text-brand-dark">Preparação</h3>
+                    <p class="text-gray-500 mt-2 text-sm md:text-base">Do corpo e campo energético</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift text-center group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 mx-auto bg-brand-teal/10 rounded-full flex items-center justify-center text-2xl md:text-3xl mb-3 md:mb-4 group-hover:bg-brand-teal group-hover:text-white transition-colors">⚡</div>
+                    <h3 class="text-lg md:text-xl font-bold text-brand-dark">Sustentação Real</h3>
+                    <p class="text-gray-500 mt-2 text-sm md:text-base">Energia no dia a dia</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-brand hover-lift text-center group">
+                    <div class="w-12 h-12 md:w-16 md:h-16 mx-auto bg-brand-peach/10 rounded-full flex items-center justify-center text-2xl md:text-3xl mb-3 md:mb-4 group-hover:bg-brand-peach group-hover:text-white transition-colors">👁️</div>
+                    <h3 class="text-lg md:text-xl font-bold text-brand-dark">Clareza</h3>
+                    <p class="text-gray-500 mt-2 text-sm md:text-base">Para facilitar com responsabilidade</p>
+                </div>
+            </div>
+
+            <div class="text-center max-w-4xl mx-auto bg-white border border-brand-purple/20 p-4 md:p-8 rounded-2xl md:rounded-full shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                <p class="text-sm sm:text-base md:text-xl text-gray-700 px-2">
+                    <span class="text-brand-purple font-bold">Você aprende a ler, conduzir, integrar e sustentar a energia.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGEM DIVISÓRIA -->
+    <section class="py-8 md:py-12 px-4 bg-white">
+        <div class="max-w-5xl mx-auto" data-aos="fade-up">
+            <img src="kelen-kundalini-2.jpg" alt="Vivência em Grupo Renascimento Kundalini" class="w-full rounded-soft shadow-2xl object-cover h-auto max-h-[300px] md:max-h-[800px]">
+        </div>
+    </section>
+
+    <!-- MÓDULOS -->
+    <section class="py-12 md:py-24 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-16 text-brand-dark px-2" data-aos="fade-up">
+                🌀 O Que Você Vai Aprender
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-brand border-t-4 border-brand-purple hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-brand-purple font-bold text-xs mb-2 md:mb-3 uppercase tracking-widest">Módulo 1</div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-brand-dark">O Chamado e o Despertar</h3>
+                    <ul class="space-y-2 md:space-y-3 text-gray-600 text-sm md:text-base">
+                        <li class="flex items-start gap-2"><span class="text-brand-purple mt-1">🔥</span> O que é Kundalini de verdade</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-purple mt-1">🔥</span> Mitos, verdades e cuidados</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-purple mt-1">🔥</span> Preparação energética e espiritual</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-brand border-t-4 border-brand-teal hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-brand-teal font-bold text-xs mb-2 md:mb-3 uppercase tracking-widest">Módulo 2</div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-brand-dark">Corpo, Chakras e Energia</h3>
+                    <ul class="space-y-2 md:space-y-3 text-gray-600 text-sm md:text-base">
+                        <li class="flex items-start gap-2"><span class="text-brand-teal mt-1">🌿</span> Sistema energético</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-teal mt-1">🌿</span> Chakras e fluxo da Kundalini</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-teal mt-1">🌿</span> Sintomas, bloqueios e integrações</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-brand border-t-4 border-brand-peach hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-brand-peach font-bold text-xs mb-2 md:mb-3 uppercase tracking-widest">Módulo 3</div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-brand-dark">Ativação Kundalini Consciente</h3>
+                    <ul class="space-y-2 md:space-y-3 text-gray-600 text-sm md:text-base">
+                        <li class="flex items-start gap-2"><span class="text-brand-peach mt-1">🌀</span> Como conduzir ativações seguras</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-peach mt-1">🌀</span> Leitura do campo energético</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-peach mt-1">🌀</span> Presença, intenção e condução</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-brand border-t-4 border-brand-purple hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-brand-purple font-bold text-xs mb-2 md:mb-3 uppercase tracking-widest">Módulo 4</div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-brand-dark">Formação de Facilitadores</h3>
+                    <ul class="space-y-2 md:space-y-3 text-gray-600 text-sm md:text-base">
+                        <li class="flex items-start gap-2"><span class="text-brand-purple mt-1">🤲</span> Como facilitar sessões individuais</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-purple mt-1">🤲</span> Como conduzir grupos</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-purple mt-1">🤲</span> Ética, postura e responsabilidade</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-purple mt-1">🤲</span> Sustentação do campo energético</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-brand border-t-4 border-brand-teal hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-brand-teal font-bold text-xs mb-2 md:mb-3 uppercase tracking-widest">Módulo 5</div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-brand-dark">Integração, Vida e Propósito</h3>
+                    <ul class="space-y-2 md:space-y-3 text-gray-600 text-sm md:text-base">
+                        <li class="flex items-start gap-2"><span class="text-brand-teal mt-1">🌸</span> Kundalini no cotidiano</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-teal mt-1">🌸</span> Emoções, relações e espiritualidade prática</li>
+                        <li class="flex items-start gap-2"><span class="text-brand-teal mt-1">🌸</span> Continuidade do despertar</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-brand-purple to-brand-dark text-white rounded-2xl p-6 md:p-8 shadow-brand flex flex-col justify-center relative overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+                    <div class="absolute inset-0 bg-white/5 bg-pattern"></div>
+                    <div class="relative z-10">
+                        <div class="text-4xl md:text-5xl mb-3 md:mb-4">🎓</div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-2">Certificação</h3>
+                        <p class="font-semibold mb-3 md:mb-4 text-brand-peach text-sm md:text-base">Certificado de Formação Renascimento Kundalini</p>
+                        <ul class="space-y-2 text-xs md:text-sm text-white/90">
+                            <li>✓ Atue como Facilitadora(o)</li>
+                            <li>✓ Integre em atendimentos</li>
+                            <li>✓ Utilize o método com responsabilidade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATOS -->
+    <section class="py-12 md:py-24 px-4 bg-brand-light">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-16 text-brand-dark px-2" data-aos="fade-up">
+                🌿 Dois Formatos Disponíveis
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl border-t-4 md:border-t-8 border-brand-purple hover-lift flex flex-col" data-aos="fade-right">
+                    <div class="text-center mb-6">
+                        <div class="bg-brand-purple/10 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 text-3xl md:text-4xl">🏡</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-brand-dark">Formação Presencial</h3>
+                    </div>
+                    <ul class="space-y-3 md:space-y-4 text-gray-700 mb-6 md:mb-8 flex-grow text-sm md:text-base">
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-purple font-bold text-lg md:text-xl flex-shrink-0">✓</span> Apenas 10 vagas</li>
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-purple font-bold text-lg md:text-xl flex-shrink-0">✓</span> Grupo íntimo e profundo</li>
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-purple font-bold text-lg md:text-xl flex-shrink-0">✓</span> Vivência presencial guiada</li>
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-purple font-bold text-lg md:text-xl flex-shrink-0">✓</span> Acesso imediato à plataforma Eduzz</li>
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-purple font-bold text-lg md:text-xl flex-shrink-0">✓</span> Certificação inclusa</li>
+                    </ul>
+                    <div class="bg-yellow-50 text-yellow-800 p-3 md:p-4 rounded-xl text-center text-xs sm:text-sm font-semibold border border-yellow-100">
+                        ⚠️ As vagas são limitadas por responsabilidade energética.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl border-t-4 md:border-t-8 border-brand-teal hover-lift flex flex-col" data-aos="fade-left">
+                    <div class="text-center mb-6">
+                        <div class="bg-brand-teal/10 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 text-3xl md:text-4xl">💻</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-brand-dark">Formação Online</h3>
+                    </div>
+                    <ul class="space-y-3 md:space-y-4 text-gray-700 mb-6 md:mb-8 flex-grow text-sm md:text-base">
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-teal font-bold text-lg md:text-xl flex-shrink-0">✓</span> Aulas gravadas na plataforma Eduzz</li>
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-teal font-bold text-lg md:text-xl flex-shrink-0">✓</span> Acesso imediato após a inscrição</li>
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-teal font-bold text-lg md:text-xl flex-shrink-0">✓</span> Conteúdo completo e estruturado</li>
+                        <li class="flex items-start gap-2 md:gap-3"><span class="text-brand-teal font-bold text-lg md:text-xl flex-shrink-0">✓</span> Certificação inclusa</li>
+                    </ul>
+                    <div class="bg-teal-50 text-teal-800 p-3 md:p-4 rounded-xl text-center text-xs sm:text-sm font-semibold border border-teal-100">
+                        ✨ Ideal para quem sente o chamado, mesmo à distância.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITADORES -->
+    <section class="py-12 md:py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-brand-dark px-2" data-aos="fade-up">
+                🌈 Para Facilitadores e Autodespertar
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div class="p-6 md:p-8 bg-brand-light rounded-2xl md:rounded-3xl border border-brand-purple/20 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-lg md:text-xl font-bold text-brand-purple mb-3 md:mb-4 flex items-center gap-2">
+                        <span>✨</span> Se você deseja se tornar facilitadora(o):
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">Esta formação te entrega base, consciência, método e autorização energética.</p>
+                </div>
+                <div class="p-6 md:p-8 bg-brand-light rounded-2xl md:rounded-3xl border border-brand-teal/20 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-lg md:text-xl font-bold text-brand-teal mb-3 md:mb-4 flex items-center gap-2">
+                        <span>✨</span> Se você deseja trabalhar apenas sua própria energia:
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">Você aprenderá a sustentar sua Kundalini de forma integrada, segura e amorosa.</p>
+                </div>
+            </div>
+            
+            <p class="text-center mt-8 md:mt-10 text-gray-500 italic max-w-2xl mx-auto text-sm md:text-base px-4" data-aos="fade-up" data-aos-delay="300">
+                👉 Não é obrigatório atender pessoas. O curso respeita o caminho individual de cada alma.
+            </p>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="py-12 md:py-20 px-4 bg-brand-light">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-brand-dark px-2" data-aos="fade-up">
+                🌺 O Que Muda Após Esta Formação?
+            </h2>
+
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 md:mb-10" data-aos="fade-up">
+                <span class="bg-white px-4 py-2 md:px-6 md:py-3 rounded-full shadow-sm text-brand-dark font-medium border border-gray-100 text-xs sm:text-sm md:text-base">Clareza espiritual</span>
+                <span class="bg-white px-4 py-2 md:px-6 md:py-3 rounded-full shadow-sm text-brand-dark font-medium border border-gray-100 text-xs sm:text-sm md:text-base">Confiança energética</span>
+                <span class="bg-white px-4 py-2 md:px-6 md:py-3 rounded-full shadow-sm text-brand-dark font-medium border border-gray-100 text-xs sm:text-sm md:text-base">Maior presença no corpo</span>
+                <span class="bg-white px-4 py-2 md:px-6 md:py-3 rounded-full shadow-sm text-brand-dark font-medium border border-gray-100 text-xs sm:text-sm md:text-base">Estados elevados de consciência</span>
+                <span class="bg-white px-4 py-2 md:px-6 md:py-3 rounded-full shadow-sm text-brand-dark font-medium border border-gray-100 text-xs sm:text-sm md:text-base">Propósito e serviço</span>
+            </div>
+
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-700 font-serif px-4" data-aos="fade-up" data-aos-delay="200">
+                "Você não sai a mesma pessoa que entrou. <br>
+                <span class="font-bold text-brand-purple">Você sai mais inteira, mais consciente e mais presente."</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- IMAGEM PAZ -->
+    <section class="py-10 md:py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto" data-aos="fade-up">
+            <img src="kelen-paz.png" alt="Kelen Silva em estado de paz e conexão" class="w-full max-w-md md:max-w-lg mx-auto rounded-soft shadow-2xl">
+        </div>
+    </section>
+
+    <!-- QUEM TE GUIA -->
+    <section class="py-12 md:py-24 px-4 bg-brand-light border-t border-brand-purple/5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-16 text-brand-dark px-2" data-aos="fade-up">
+                👩‍🦋 Quem Te Guia Neste Processo
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="text-center relative order-2 md:order-1" data-aos="fade-right">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-purple/20 to-transparent rounded-soft transform translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 -z-10"></div>
+                    <img src="kelen-sorrindo.png" alt="Kelen Silva sorrindo" class="w-full max-w-sm md:max-w-md mx-auto rounded-soft shadow-2xl relative z-10">
+                </div>
+
+                <div class="space-y-6 md:space-y-8 order-1 md:order-2" data-aos="fade-left">
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark mb-2">Kelen Silva</h3>
+                        <p class="text-brand-purple font-semibold text-base md:text-lg">Criadora do Método Renascimento Kundalini</p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 md:gap-3">
+                        <div class="bg-white px-3 py-2 md:px-4 md:py-2 rounded-full border border-brand-purple/30">
+                            <span class="font-bold text-brand-purple text-xs md:text-sm">✨ Educadora Energética</span>
+                        </div>
+                        <div class="bg-white px-3 py-2 md:px-4 md:py-2 rounded-full border border-brand-teal/30">
+                            <span class="font-bold text-brand-teal text-xs md:text-sm">🔥 Mestre Reiki</span>
+                        </div>
+                        <div class="bg-white px-3 py-2 md:px-4 md:py-2 rounded-full border border-brand-peach/30">
+                            <span class="font-bold text-brand-dark text-xs md:text-sm">⚡ Facilitadora Kundalini</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        Kelen atua há anos guiando pessoas em processos profundos de despertar da consciência, ativação energética e integração espiritual, sempre com uma condução ética, amorosa e ancorada.
+                    </p>
+                    
+                    <div class="bg-white p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-sm border-l-4 border-brand-purple relative overflow-hidden">
+                        <div class="absolute right-0 top-0 opacity-10 text-6xl md:text-9xl font-serif leading-none text-brand-purple">"</div>
+                        <p class="text-lg sm:text-xl font-serif text-gray-800 relative z-10">
+                            "Sua missão é guiar almas no processo de lembrança de quem elas são."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REDES SOCIAIS -->
+    <section class="py-10 md:py-16 px-4 bg-white border-t border-brand-purple/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark mb-3 md:mb-4 px-2" data-aos="fade-up">
+                💜 Conecte-se Comigo
+            </h2>
+            <p class="text-gray-600 mb-8 md:mb-10 max-w-2xl mx-auto text-sm md:text-base px-4" data-aos="fade-up" data-aos-delay="100">
+                Acompanhe conteúdos exclusivos sobre despertar da Kundalini e consciência.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-4" data-aos="zoom-in" data-aos-delay="200">
+                
+                <a href="https://www.instagram.com/kelensilva.kundalini/" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-full text-white font-bold text-base md:text-lg hover-lift shadow-lg bg-gradient-insta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="md:w-6 md:h-6">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.232-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.232 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                    <span class="text-sm md:text-base">@kelensilva.kundalini</span>
+                </a>
+
+                <a href="https://www.facebook.com/kelensilvaofc" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-full text-white font-bold text-base md:text-lg hover-lift shadow-lg bg-[#1877F2]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="md:w-6 md:h-6">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                    <span class="text-sm md:text-base">Facebook</span>
+                </a>
+
+                <a href="https://www.youtube.com/@oficialkelensilva" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-full text-white font-bold text-base md:text-lg hover-lift shadow-lg bg-[#FF0000]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="md:w-6 md:h-6">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                    </svg>
+                    <span class="text-sm md:text-base">YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="py-12 md:py-20 px-4 gradient-brand relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-pattern"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8 px-2" data-aos="fade-up">
+                🔔 O Renascimento Kundalini É Um Chamado
+            </h2>
+
+            <div class="space-y-4 md:space-y-6 text-white text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 px-4" data-aos="fade-up" data-aos-delay="100">
+                <p>Chamados não se explicam. Eles se sentem.</p>
+                <p class="font-semibold text-xl sm:text-2xl md:text-3xl">
+                    Se esta formação tocou algo em você, confie.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/5551981502140?text=Ol%C3%A1%2C%20quero%20me%20inscrever%20na%20Forma%C3%A7%C3%A3o%20Renascimento%20Kundalini" class="bg-white text-brand-purple px-8 sm:px-10 py-4 sm:py-5 rounded-full font-bold text-lg sm:text-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 text-center">
+                    FALE COMIGO NO WHATSAPP
+                </a>
+            </div>
+
+            <p class="text-white mt-8 md:mt-12 text-xs md:text-sm opacity-90 px-4" data-aos="fade-up" data-aos-delay="300">
+                © 2025 Kelen Silva - Todos os direitos reservados
+            </p>
+        </div>
+    </section>
+
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 50 });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
+    </script>
+</body>
+</html>

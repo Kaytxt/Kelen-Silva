@@ -1,0 +1,146 @@
+# 📸 MAPEAMENTO COMPLETO DAS IMAGENS NO SITE
+
+## ✅ TODAS AS IMAGENS JÁ ESTÃO INSERIDAS NO HTML!
+
+O arquivo **formacao-kundalini-completo.html** já possui todas as 7 imagens integradas nas posições estratégicas do site.
+
+---
+
+## 📋 ONDE CADA IMAGEM FOI COLOCADA:
+
+### 1. **logo-kelen.png**
+**Localização:** Seção Hero (topo do site)
+**Linha:** ~42
+**Função:** Logo oficial da marca no início da página
+**Descrição:** Logo "Kelen Silva Guia da Alma" com elementos espirituais
+
+---
+
+### 2. **kelen-bracos-abertos.png** 
+**Localização:** Seção "Um Chamado da Alma"
+**Linha:** ~115
+**Função:** Imagem principal da seção que fala sobre o despertar
+**Descrição:** Kelen na natureza com braços abertos em postura de expansão
+**Por quê:** Transmite perfeitamente a mensagem de abertura e chamado da alma
+
+---
+
+### 3. **kelen-kundalini.png**
+**Localização:** Seção "O Que É o Renascimento Kundalini?"
+**Linha:** ~167
+**Função:** Demonstrar uma sessão de trabalho energético
+**Descrição:** Kelen realizando trabalho energético em sessão
+**Por quê:** Mostra na prática como funciona o trabalho de Kundalini
+
+---
+
+### 4. **kelen-kundalini-2.jpg**
+**Localização:** Seção intermediária entre módulos
+**Linha:** ~247
+**Função:** Imagem de transição visual
+**Descrição:** Sessão de Kundalini em ambiente interno iluminado
+**Por quê:** Reforça visualmente o trabalho prático da formação
+
+---
+
+### 5. **kelen-paz.png**
+**Localização:** Seção "O Que Muda Após Esta Formação?" (depois dos benefícios)
+**Linha:** ~362
+**Função:** Imagem de transição que transmite paz e conexão
+**Descrição:** Kelen na natureza com mãos em namastê
+**Por quê:** Representa o estado de paz e integração após a formação
+
+---
+
+### 6. **kelen-sorrindo.png**
+**Localização:** Seção "Quem Te Guia Neste Processo"
+**Linha:** ~380
+**Função:** Foto principal da apresentação da facilitadora
+**Descrição:** Kelen sorrindo na natureza, transmitindo acolhimento
+**Por quê:** Transmite confiança, alegria e acolhimento para os alunos
+
+---
+
+### 7. **kelen-vivencia-grupo.png**
+**Localização:** RESERVA (não utilizada no layout final)
+**Função:** Imagem alternativa/backup
+**Descrição:** Sessão de Kundalini em grupo
+**Nota:** Pode ser usada futuramente ou substituir outra imagem se desejar
+
+---
+
+## 📁 ESTRUTURA DE ARQUIVOS NECESSÁRIA:
+
+Coloque TODOS os arquivos na mesma pasta:
+
+```
+site-kundalini/
+├── formacao-kundalini-completo.html
+├── logo-kelen.png
+├── kelen-bracos-abertos.png
+├── kelen-kundalini.png
+├── kelen-kundalini-2.jpg
+├── kelen-paz.png
+├── kelen-sorrindo.png
+└── kelen-vivencia-grupo.png (opcional)
+```
+
+---
+
+## 🎨 DECISÕES DE DESIGN:
+
+### Por que essas imagens nesses lugares?
+
+1. **kelen-bracos-abertos.png** na seção "Chamado" → Transmite abertura, expansão e receptividade ao chamado espiritual
+
+2. **kelen-kundalini.png** na seção explicativa → Mostra o trabalho real, gerando credibilidade
+
+3. **kelen-kundalini-2.jpg** como divisória → Quebra visual entre seções densas de conteúdo
+
+4. **kelen-paz.png** após benefícios → Representa o resultado: paz interior e conexão
+
+5. **kelen-sorrindo.png** na apresentação → Humaniza a facilitadora e cria conexão emocional
+
+---
+
+## 🚀 COMO USAR:
+
+1. Baixe o arquivo **formacao-kundalini-completo.html**
+2. Baixe TODAS as imagens (7 arquivos)
+3. Coloque tudo na MESMA pasta
+4. Abra o HTML no navegador
+5. ✨ Pronto! Todas as imagens aparecerão corretamente
+
+---
+
+## 📱 RESPONSIVIDADE:
+
+Todas as imagens foram configuradas para funcionar perfeitamente em:
+- 📱 Celulares
+- 📱 Tablets
+- 💻 Notebooks
+- 🖥️ Desktops grandes
+
+---
+
+## 🎯 RESULTADO FINAL:
+
+O site agora tem um fluxo visual completo que:
+- ✅ Apresenta a marca (logo)
+- ✅ Inspira conexão (braços abertos)
+- ✅ Demonstra o trabalho (sessões)
+- ✅ Transmite paz (namastê)
+- ✅ Cria confiança (sorriso acolhedor)
+
+---
+
+## 💡 DICA EXTRA:
+
+Se você quiser trocar alguma imagem de lugar no futuro, basta:
+1. Localizar a linha da imagem no HTML (use Ctrl+F)
+2. Trocar o nome do arquivo src="nome-antigo.png" para src="nome-novo.png"
+3. Salvar e recarregar no navegador
+
+---
+
+✨ **TUDO PRONTO PARA USO!** ✨
