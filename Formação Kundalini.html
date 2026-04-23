@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formação Renascimento Kundalini — Kelen Silva</title>
+<meta name="description" content="Formação de Facilitadores & Despertar da Própria Energia. Um caminho profundo de despertar consciente da energia vital com Kelen Silva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+
+/* ── TOKENS ── */
+:root {
+  --forest:   oklch(13% 0.05 148);
+  --forest-2: oklch(18% 0.06 148);
+  --forest-3: oklch(24% 0.06 148);
+  --linen:    oklch(96% 0.018 78);
+  --linen-2:  oklch(91% 0.025 75);
+  --cream:    oklch(93% 0.02 78);
+  --amethyst: oklch(56% 0.2 305);
+  --amethyst-light: oklch(72% 0.16 305);
+  --gold:     oklch(76% 0.13 62);
+  --gold-dim: oklch(60% 0.1 62);
+  --text-dark: oklch(18% 0.04 148);
+  --text-mid:  oklch(38% 0.05 148);
+  --rule-dark: oklch(26% 0.05 148);
+  --rule-light: oklch(82% 0.02 78);
+
+  --serif: 'EB Garamond', Georgia, serif;
+  --display: 'Cinzel', 'Times New Roman', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--serif);
+  background: var(--forest);
+  color: var(--cream);
+  font-size: 18px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ── NAV ── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px 48px;
+  transition: background .5s, border-color .5s;
+  border-bottom: 1px solid transparent;
+}
+.nav.solid {
+  background: var(--forest);
+  border-color: var(--rule-dark);
+}
+.nav img { height: 46px; }
+.nav-link {
+  font-family: var(--display);
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  padding: 11px 28px;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  transition: background .2s, color .2s;
+}
+.nav-link:hover { background: var(--gold); color: var(--forest); }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  position: relative;
+  overflow: hidden;
+  background: var(--forest);
+}
+
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+}
+.hero-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  opacity: .28;
+  filter: saturate(.6) sepia(.3);
+}
+.hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to bottom, var(--forest) 0%, transparent 30%, transparent 60%, var(--forest) 100%),
+    linear-gradient(to right, var(--forest) 0%, transparent 50%);
+}
+
+.hero-body {
+  position: relative; z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 160px 80px 64px;
+  max-width: 900px;
+}
+
+.hero-kicker {
+  font-family: var(--display);
+  font-size: 10px;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 36px;
+}
+
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(48px, 7vw, 108px);
+  font-weight: 400;
+  line-height: .96;
+  letter-spacing: -.01em;
+  color: var(--cream);
+  margin-bottom: 40px;
+}
+.hero h1 .accent { color: var(--amethyst-light); }
+
+.hero-sub {
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-style: italic;
+  color: oklch(75% 0.03 78);
+  max-width: 500px;
+  line-height: 1.55;
+  margin-bottom: 52px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--display);
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  background: var(--amethyst);
+  color: white;
+  transition: background .2s, transform .15s;
+}
+.btn:hover { background: var(--amethyst-light); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--rule-dark);
+  color: var(--cream);
+}
+.btn-outline:hover { background: var(--forest-2); }
+.btn-gold {
+  background: var(--gold);
+  color: var(--forest);
+}
+.btn-gold:hover { background: oklch(82% 0.14 62); }
+
+.hero-foot {
+  position: relative; z-index: 2;
+  border-top: 1px solid var(--rule-dark);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 80px;
+}
+.hero-stat {
+  padding: 28px 0;
+  border-right: 1px solid var(--rule-dark);
+}
+.hero-stat:last-child { border-right: none; }
+.hero-stat-n {
+  font-family: var(--display);
+  font-size: 28px;
+  color: var(--gold);
+  letter-spacing: -.01em;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.hero-stat-l {
+  font-size: 12px;
+  color: oklch(55% 0.03 78);
+  letter-spacing: .06em;
+}
+.hero-stat:nth-child(2) { padding-left: 32px; }
+.hero-stat:nth-child(3) { padding-left: 32px; }
+
+/* ── SEÇÃO BASE ── */
+.sec { padding: 120px 0; }
+.sec.dark { background: var(--forest); color: var(--cream); }
+.sec.mid  { background: var(--forest-2); color: var(--cream); }
+.sec.light { background: var(--linen); color: var(--text-dark); }
+.sec.light-2 { background: var(--linen-2); color: var(--text-dark); }
+
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 80px; }
+
+.chapter {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 48px;
+}
+.chapter-line {
+  width: 32px; height: 1px;
+  background: var(--gold);
+  margin-top: 8px; flex-shrink: 0;
+}
+.chapter-label {
+  font-family: var(--display);
+  font-size: 9px;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.sec-title {
+  font-family: var(--display);
+  font-size: clamp(32px, 4vw, 60px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -.01em;
+  margin-bottom: 48px;
+}
+.sec-title .it { font-family: var(--serif); font-style: italic; font-weight: 400; }
+.sec.dark .sec-title, .sec.mid .sec-title { color: var(--cream); }
+.sec.light .sec-title, .sec.light-2 .sec-title { color: var(--text-dark); }
+
+/* ── MANIFESTO ── */
+.manifesto {
+  background: var(--forest-2);
+  padding: 120px 80px;
+  border-top: 1px solid var(--rule-dark);
+  border-bottom: 1px solid var(--rule-dark);
+  overflow: hidden;
+}
+.manifesto-lines { max-width: 840px; margin: 0 auto; }
+.manifesto-line {
+  font-family: var(--serif);
+  font-size: clamp(22px, 3vw, 40px);
+  line-height: 1.45;
+  color: oklch(65% 0.03 78);
+  margin-bottom: 32px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+.manifesto-line.vis { opacity: 1; transform: none; }
+.manifesto-line strong { color: var(--cream); font-weight: 500; }
+.manifesto-line .gold { color: var(--gold); font-style: italic; }
+.manifesto-line .am { color: var(--amethyst-light); }
+
+/* ── PARA QUEM ── */
+.pq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--rule-light);
+  margin-top: 64px;
+}
+.pq-item {
+  padding: 36px 0;
+  border-bottom: 1px solid var(--rule-light);
+  display: flex;
+  gap: 24px;
+}
+.pq-item:nth-child(odd)  { padding-right: 56px; border-right: 1px solid var(--rule-light); }
+.pq-item:nth-child(even) { padding-left: 56px; }
+.pq-n {
+  font-family: var(--display);
+  font-size: 12px;
+  color: var(--amethyst);
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+.pq-t {
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+.pq-alerta {
+  margin-top: 64px;
+  padding: 48px 56px;
+  background: var(--forest);
+  color: var(--cream);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.pq-alerta-bar {
+  width: 3px; min-height: 80px;
+  background: var(--amethyst);
+  flex-shrink: 0;
+}
+.pq-alerta-text {
+  font-family: var(--serif);
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--cream);
+}
+.pq-alerta-text strong { font-style: normal; color: var(--gold); font-weight: 500; }
+
+/* ── KUNDALINI SPLIT ── */
+.ks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 660px;
+}
+.ks-img { overflow: hidden; position: relative; }
+.ks-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.ks-img::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, transparent 60%, var(--forest) 100%);
+}
+.ks-text {
+  background: var(--forest);
+  padding: 88px 72px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.ks-text .chapter { margin-bottom: 36px; }
+.ks-text h2 {
+  font-family: var(--display);
+  font-size: clamp(28px, 3vw, 46px);
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 40px;
+  line-height: 1.12;
+  letter-spacing: -.01em;
+}
+.ks-list { list-style: none; border-top: 1px solid var(--rule-dark); }
+.ks-list li {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule-dark);
+  font-size: clamp(15px, 1.4vw, 18px);
+  color: oklch(72% 0.03 78);
+  line-height: 1.5;
+}
+.ks-list li strong { display: block; color: var(--cream); font-weight: 500; margin-bottom: 2px; }
+
+/* ── FULL IMAGE ── */
+.full-img { height: clamp(280px, 45vw, 600px); overflow: hidden; }
+.full-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; filter: brightness(.7) saturate(.9); }
+
+/* ── DIFERENCIAIS ── */
+.dif-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--rule-dark);
+  margin-top: 64px;
+}
+.dif-cell {
+  padding: 44px 0 44px 0;
+  border-bottom: 1px solid var(--rule-dark);
+}
+.dif-cell:nth-child(3n+2) {
+  padding: 44px 40px;
+  border-left: 1px solid var(--rule-dark);
+  border-right: 1px solid var(--rule-dark);
+}
+.dif-cell:nth-child(3n+1) { padding-right: 40px; }
+.dif-cell:nth-child(3n+3) { padding-left: 40px; }
+.dif-num {
+  font-family: var(--display);
+  font-size: 10px;
+  letter-spacing: .2em;
+  color: var(--amethyst-light);
+  margin-bottom: 14px;
+}
+.dif-cell h3 {
+  font-family: var(--display);
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.dif-cell p { font-size: 14px; color: oklch(58% 0.03 78); line-height: 1.65; }
+
+/* ── MÓDULOS ── */
+.mod-list { border-top: 1px solid var(--rule-light); margin-top: 64px; }
+.mod-item {
+  border-bottom: 1px solid var(--rule-light);
+  overflow: hidden;
+}
+.mod-head {
+  display: grid;
+  grid-template-columns: 72px 1fr 32px;
+  align-items: center;
+  padding: 32px 0;
+  cursor: pointer;
+  gap: 16px;
+}
+.mod-num {
+  font-family: var(--display);
+  font-size: 11px;
+  letter-spacing: .18em;
+  color: var(--amethyst);
+}
+.mod-title {
+  font-family: var(--display);
+  font-size: clamp(16px, 1.6vw, 20px);
+  font-weight: 400;
+  color: var(--text-dark);
+}
+.mod-arrow {
+  width: 20px; height: 20px;
+  border-right: 1px solid var(--amethyst);
+  border-bottom: 1px solid var(--amethyst);
+  transform: rotate(45deg);
+  transition: transform .35s;
+  justify-self: end;
+  margin-top: -6px;
+}
+.mod-item.open .mod-arrow { transform: rotate(225deg); margin-top: 6px; }
+.mod-body {
+  max-height: 0;
+  transition: max-height .45s ease;
+  overflow: hidden;
+}
+.mod-body-inner {
+  padding: 0 72px 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mod-tag {
+  font-size: 13px;
+  padding: 6px 16px;
+  background: var(--linen-2);
+  color: var(--text-mid);
+  letter-spacing: .02em;
+}
+.mod-cert {
+  margin-top: 48px;
+  background: var(--forest);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 40px;
+  padding: 48px 56px;
+  color: var(--cream);
+}
+.mod-cert h3 {
+  font-family: var(--display);
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 400;
+  margin-bottom: 8px;
+  letter-spacing: -.01em;
+}
+.mod-cert p { font-size: 15px; color: oklch(60% 0.03 78); }
+
+/* ── FORMATOS ── */
+.fmt-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 64px;
+  border: 1px solid var(--rule-dark);
+}
+.fmt-col {
+  padding: 64px 56px;
+  position: relative;
+}
+.fmt-col + .fmt-col {
+  border-left: 1px solid var(--rule-dark);
+}
+.fmt-badge {
+  font-family: var(--display);
+  font-size: 9px;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.fmt-col h3 {
+  font-family: var(--display);
+  font-size: clamp(22px, 2.5vw, 34px);
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 40px;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+}
+.fmt-feats { list-style: none; margin-bottom: 40px; }
+.fmt-feats li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule-dark);
+  font-size: 15px;
+  color: oklch(68% 0.03 78);
+  display: flex;
+  gap: 14px;
+}
+.fmt-dash { color: var(--gold); flex-shrink: 0; }
+.fmt-note {
+  font-size: 13px;
+  font-style: italic;
+  color: oklch(48% 0.04 148);
+  margin-bottom: 36px;
+}
+
+/* ── BIO ── */
+.bio-wrap {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  gap: 100px;
+  align-items: start;
+}
+.bio-photo-wrap { position: sticky; top: 100px; }
+.bio-photo {
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+.bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.bio-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.bio-tag {
+  font-family: var(--display);
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border: 1px solid var(--rule-light);
+  color: var(--text-mid);
+}
+.bio-right .name {
+  font-family: var(--display);
+  font-size: clamp(38px, 4.5vw, 68px);
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: .96;
+  letter-spacing: -.02em;
+  margin-bottom: 8px;
+}
+.bio-right .role {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--amethyst);
+  margin-bottom: 48px;
+}
+.bio-right p {
+  font-size: clamp(16px, 1.5vw, 19px);
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+.bio-quote {
+  margin: 48px 0;
+  padding-left: 32px;
+  border-left: 2px solid var(--amethyst);
+}
+.bio-quote p {
+  font-size: clamp(20px, 2vw, 26px);
+  font-style: italic;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+.bio-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 48px; }
+
+/* ── FRASE FINAL ── */
+.frase {
+  background: var(--forest);
+  padding: 140px 80px;
+  text-align: center;
+  border-top: 1px solid var(--rule-dark);
+  border-bottom: 1px solid var(--rule-dark);
+}
+.frase blockquote {
+  font-family: var(--display);
+  font-size: clamp(26px, 4vw, 58px);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.2;
+  max-width: 880px;
+  margin: 0 auto 48px;
+  letter-spacing: -.01em;
+}
+.frase blockquote .it {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--amethyst-light);
+}
+.frase-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 56px;
+}
+.frase-pill {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-style: italic;
+  padding: 8px 20px;
+  border: 1px solid var(--rule-dark);
+  color: oklch(62% 0.03 78);
+}
+
+/* ── CTA ── */
+.cta {
+  background: var(--forest-2);
+  padding: 120px 80px;
+  border-top: 1px solid var(--rule-dark);
+}
+.cta-inner { max-width: 640px; }
+.cta-inner h2 {
+  font-family: var(--display);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.08;
+  letter-spacing: -.01em;
+  margin-bottom: 24px;
+}
+.cta-inner h2 .it { font-family: var(--serif); font-style: italic; color: var(--gold); }
+.cta-inner p {
+  font-size: clamp(16px, 1.5vw, 19px);
+  color: oklch(62% 0.03 78);
+  font-style: italic;
+  line-height: 1.65;
+  margin-bottom: 48px;
+}
+.cta-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--forest);
+  border-top: 1px solid var(--rule-dark);
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+footer img { height: 40px; opacity: .6; }
+footer p { font-size: 12px; color: oklch(40% 0.03 148); letter-spacing: .04em; }
+
+/* ── FLOAT WA ── */
+.wa {
+  position: fixed; bottom: 28px; right: 28px; z-index: 200;
+  width: 52px; height: 52px;
+  background: #25d366; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,.25);
+  transition: transform .2s;
+}
+.wa:hover { transform: scale(1.08); }
+
+/* ── REVEAL ── */
+.r {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .75s ease, transform .75s ease;
+}
+.r.vis { opacity: 1; transform: none; }
+
+/* ── TWEAKS ── */
+#tweaks-panel {
+  display: none;
+  position: fixed; bottom: 92px; right: 28px;
+  background: var(--linen); color: var(--text-dark);
+  border: 1px solid var(--rule-light);
+  padding: 24px; width: 248px;
+  z-index: 200;
+  box-shadow: 0 8px 32px rgba(0,0,0,.2);
+  font-family: var(--serif);
+  font-size: 14px;
+}
+#tweaks-panel h4 {
+  font-family: var(--display);
+  font-size: 9px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin-bottom: 20px;
+}
+.tw-row { margin-bottom: 16px; }
+.tw-row label { display: block; font-size: 12px; color: var(--text-mid); margin-bottom: 6px; }
+.tw-row select, .tw-row input { width: 100%; padding: 6px 8px; border: 1px solid var(--rule-light); font-family: var(--serif); font-size: 13px; background: white; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .nav { padding: 18px 24px; }
+  .wrap { padding: 0 24px; }
+  .hero-body { padding: 120px 24px 48px; }
+  .hero-foot { padding: 0 24px; }
+  .manifesto { padding: 80px 24px; }
+  .ks { grid-template-columns: 1fr; }
+  .ks-img { height: 380px; }
+  .ks-img::after { background: linear-gradient(to top, var(--forest) 0%, transparent 60%); }
+  .ks-text { padding: 56px 24px; }
+  .dif-grid { grid-template-columns: 1fr; }
+  .dif-cell:nth-child(3n+2), .dif-cell:nth-child(3n+1), .dif-cell:nth-child(3n+3) { padding: 32px 0; border-left: none; border-right: none; }
+  .fmt-row { grid-template-columns: 1fr; }
+  .fmt-col + .fmt-col { border-left: none; border-top: 1px solid var(--rule-dark); }
+  .fmt-col { padding: 48px 28px; }
+  .bio-wrap { grid-template-columns: 1fr; gap: 48px; }
+  .bio-photo-wrap { position: static; }
+  .frase { padding: 88px 24px; }
+  .cta { padding: 88px 24px; }
+  footer { padding: 32px 24px; }
+  .pq-grid { grid-template-columns: 1fr; }
+  .pq-item:nth-child(odd)  { padding-right: 0; border-right: none; }
+  .pq-item:nth-child(even) { padding-left: 0; }
+  .hero-foot { grid-template-columns: 1fr; }
+  .hero-stat { border-right: none; border-bottom: 1px solid var(--rule-dark); }
+  .hero-stat:nth-child(2), .hero-stat:nth-child(3) { padding-left: 0; }
+  .mod-body-inner { padding: 0 24px 32px; }
+  .mod-cert { grid-template-columns: 1fr; padding: 36px 28px; gap: 24px; }
+  .pq-alerta { padding: 36px 28px; flex-direction: column; gap: 24px; }
+  .sec { padding: 80px 0; }
+}
+</style>
+</head>
+<body>
+
+<a class="wa" href="https://wa.me/5551981502140?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Formação%20Renascimento%20Kundalini" target="_blank" aria-label="WhatsApp">
+  <svg width="24" height="24" fill="white" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <img src="assets/logo-kelen.png" alt="Kelen Silva — Guia da Alma">
+  <a href="https://wa.me/5551981502140?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Formação%20Renascimento%20Kundalini" target="_blank" class="nav-link">Inscrever-se</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="assets/kelen-bracos-abertos.png" alt="">
+  </div>
+  <div class="hero-body">
+    <p class="hero-kicker">Formação de Facilitadores &amp; Despertar da Própria Energia</p>
+    <h1>O Renascimento<br>Kundalini não<br>acontece <span class="accent">fora</span>.</h1>
+    <p class="hero-sub">Ele desperta quando você está pronta para sustentar a sua própria energia.</p>
+    <a href="https://wa.me/5551981502140?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Formação%20Renascimento%20Kundalini" target="_blank" class="btn">Quero saber mais</a>
+  </div>
+  <div class="hero-foot">
+    <div class="hero-stat">
+      <div class="hero-stat-n">5</div>
+      <div class="hero-stat-l">Módulos de Formação</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-n">10</div>
+      <div class="hero-stat-l">Vagas Presenciais</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-n">2</div>
+      <div class="hero-stat-l">Formatos Disponíveis</div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<div class="manifesto">
+  <div class="manifesto-lines">
+    <p class="manifesto-line">Talvez você já tenha feito terapias. Buscado respostas, cursos, ativações, iniciações.</p>
+    <p class="manifesto-line">E ainda assim… <strong>sente que existe algo mais profundo pedindo para despertar.</strong></p>
+    <p class="manifesto-line">O <span class="gold">Renascimento Kundalini</span> surge exatamente nesse ponto:</p>
+    <p class="manifesto-line">quando a alma está pronta para parar de buscar fora e começar a <span class="am">sustentar a própria energia com consciência</span>.</p>
+  </div>
+</div>
+
+<!-- PARA QUEM É -->
+<section class="sec light">
+  <div class="wrap">
+    <div class="chapter r">
+      <div class="chapter-line"></div>
+      <span class="chapter-label">Para quem é</span>
+    </div>
+    <h2 class="sec-title r">Esta formação é para<br>quem sente o <span class="it">chamado.</span></h2>
+    <div class="pq-grid r">
+      <div class="pq-item"><span class="pq-n">01</span><span class="pq-t">Sente um chamado espiritual verdadeiro e não sabe mais onde buscar</span></div>
+      <div class="pq-item"><span class="pq-n">02</span><span class="pq-t">Deseja trabalhar com energia sem riscos ou excessos</span></div>
+      <div class="pq-item"><span class="pq-n">03</span><span class="pq-t">Quer compreender a Kundalini de forma consciente e segura</span></div>
+      <div class="pq-item"><span class="pq-n">04</span><span class="pq-t">Busca uma formação séria, profunda e ética</span></div>
+      <div class="pq-item"><span class="pq-n">05</span><span class="pq-t">Sente o desejo de servir como facilitadora ou facilitador</span></div>
+      <div class="pq-item"><span class="pq-n">06</span><span class="pq-t">Quer viver o próprio despertar com ancoragem e integração</span></div>
+    </div>
+    <div class="pq-alerta r">
+      <div class="pq-alerta-bar"></div>
+      <p class="pq-alerta-text">Esta formação não é para curiosos. É para quem sente que já não dá mais para adiar o próprio Renascimento. <strong>O chamado é urgente — as vagas, não.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE É KUNDALINI -->
+<div class="ks">
+  <div class="ks-img">
+    <img src="assets/kelen-kundalini.png" alt="Sessão Kundalini">
+  </div>
+  <div class="ks-text">
+    <div class="chapter">
+      <div class="chapter-line"></div>
+      <span class="chapter-label">O que é</span>
+    </div>
+    <h2>Renascimento<br>Kundalini</h2>
+    <ul class="ks-list">
+      <li><strong>Um despertar consciente da energia vital</strong>Respeitando corpo, psique, campo emocional e o tempo da alma.</li>
+      <li><strong>Kundalini não é força</strong>Ela é inteligência espiritual em movimento — que pede maturidade, não pressa.</li>
+      <li><strong>Não se trata de ativar rápido</strong>Trata-se de sustentar com presença, consciência e ética.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- DIFERENCIAIS -->
+<section class="sec mid">
+  <div class="wrap">
+    <div class="chapter r">
+      <div class="chapter-line"></div>
+      <span class="chapter-label">O que torna diferente</span>
+    </div>
+    <h2 class="sec-title r">Uma formação criada para romper<br>com caminhos <span class="it">desancorados.</span></h2>
+    <div class="dif-grid r">
+      <div class="dif-cell"><span class="dif-num">01 ——</span><h3>Método Próprio</h3><p>Estruturado e seguro, desenvolvido por Kelen Silva a partir de anos de prática, pesquisa e vivência.</p></div>
+      <div class="dif-cell"><span class="dif-num">02 ——</span><h3>Condução Ética</h3><p>Consciente, responsável e amorosa. Sem excessos ou promessas de ativações rápidas e desintegradas.</p></div>
+      <div class="dif-cell"><span class="dif-num">03 ——</span><h3>Certificação Profissionalizante</h3><p>Reconhecida para quem deseja atuar como facilitadora ou facilitador de forma segura e ética.</p></div>
+      <div class="dif-cell"><span class="dif-num">04 ——</span><h3>Preparação Completa</h3><p>Corpo, campo energético e psique preparados antes de qualquer processo de ativação.</p></div>
+      <div class="dif-cell"><span class="dif-num">05 ——</span><h3>Sustentação Real</h3><p>Você aprende a integrar e sustentar a energia no cotidiano — não só durante as vivências.</p></div>
+      <div class="dif-cell"><span class="dif-num">06 ——</span><h3>Leitura de Campo</h3><p>Clareza e responsabilidade para ler, conduzir e integrar o campo energético com presença.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL IMAGE -->
+<div class="full-img">
+  <img src="assets/kelen-kundalini-2.jpg" alt="Vivência Kundalini">
+</div>
+
+<!-- MÓDULOS -->
+<section class="sec light-2">
+  <div class="wrap">
+    <div class="chapter r">
+      <div class="chapter-line"></div>
+      <span class="chapter-label">Conteúdo</span>
+    </div>
+    <h2 class="sec-title r">O que você vai <span class="it">aprender.</span></h2>
+    <div class="mod-list r">
+      <div class="mod-item">
+        <div class="mod-head"><span class="mod-num">Módulo 01</span><span class="mod-title">O Chamado e o Despertar</span><div class="mod-arrow"></div></div>
+        <div class="mod-body"><div class="mod-body-inner"><span class="mod-tag">O que é Kundalini de verdade</span><span class="mod-tag">Mitos, verdades e cuidados</span><span class="mod-tag">Preparação energética e espiritual</span></div></div>
+      </div>
+      <div class="mod-item">
+        <div class="mod-head"><span class="mod-num">Módulo 02</span><span class="mod-title">Corpo, Chakras e Energia</span><div class="mod-arrow"></div></div>
+        <div class="mod-body"><div class="mod-body-inner"><span class="mod-tag">Sistema energético</span><span class="mod-tag">Chakras e fluxo da Kundalini</span><span class="mod-tag">Sintomas, bloqueios e integrações</span></div></div>
+      </div>
+      <div class="mod-item">
+        <div class="mod-head"><span class="mod-num">Módulo 03</span><span class="mod-title">Ativação Kundalini Consciente</span><div class="mod-arrow"></div></div>
+        <div class="mod-body"><div class="mod-body-inner"><span class="mod-tag">Como conduzir ativações seguras</span><span class="mod-tag">Leitura do campo energético</span><span class="mod-tag">Presença, intenção e condução</span></div></div>
+      </div>
+      <div class="mod-item">
+        <div class="mod-head"><span class="mod-num">Módulo 04</span><span class="mod-title">Formação de Facilitadores</span><div class="mod-arrow"></div></div>
+        <div class="mod-body"><div class="mod-body-inner"><span class="mod-tag">Sessões individuais e grupos</span><span class="mod-tag">Ética, postura e responsabilidade</span><span class="mod-tag">Sustentação do campo energético</span></div></div>
+      </div>
+      <div class="mod-item">
+        <div class="mod-head"><span class="mod-num">Módulo 05</span><span class="mod-title">Integração, Vida e Propósito</span><div class="mod-arrow"></div></div>
+        <div class="mod-body"><div class="mod-body-inner"><span class="mod-tag">Kundalini no cotidiano</span><span class="mod-tag">Emoções, relações e espiritualidade prática</span><span class="mod-tag">Continuidade do despertar</span></div></div>
+      </div>
+    </div>
+    <div class="mod-cert r">
+      <div>
+        <h3>Certificação</h3>
+        <p>Certificado de Formação Renascimento Kundalini — atue como facilitadora, integre em atendimentos e utilize o método com ética e responsabilidade.</p>
+      </div>
+      <a href="https://wa.me/5551981502140" target="_blank" class="btn btn-gold" style="white-space:nowrap;">Garantir vaga</a>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATOS -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="chapter r">
+      <div class="chapter-line"></div>
+      <span class="chapter-label">Formatos</span>
+    </div>
+    <h2 class="sec-title r">Dois caminhos,<br>um só <span class="it">despertar.</span></h2>
+    <div class="fmt-row r">
+      <div class="fmt-col">
+        <div class="fmt-badge">Presencial</div>
+        <h3>Formação<br>Presencial</h3>
+        <ul class="fmt-feats">
+          <li><span class="fmt-dash">—</span> Apenas 10 vagas</li>
+          <li><span class="fmt-dash">—</span> Grupo íntimo e profundo</li>
+          <li><span class="fmt-dash">—</span> Vivência presencial guiada</li>
+          <li><span class="fmt-dash">—</span> Acesso à plataforma Eduzz</li>
+          <li><span class="fmt-dash">—</span> Certificação inclusa</li>
+        </ul>
+        <p class="fmt-note">Vagas limitadas por responsabilidade energética.</p>
+        <a href="https://wa.me/5551981502140?text=Quero%20a%20formação%20presencial" target="_blank" class="btn">Reservar vaga</a>
+      </div>
+      <div class="fmt-col">
+        <div class="fmt-badge">Online</div>
+        <h3>Formação<br>Online</h3>
+        <ul class="fmt-feats">
+          <li><span class="fmt-dash">—</span> Aulas gravadas na Eduzz</li>
+          <li><span class="fmt-dash">—</span> Acesso imediato após inscrição</li>
+          <li><span class="fmt-dash">—</span> Conteúdo completo e estruturado</li>
+          <li><span class="fmt-dash">—</span> Certificação inclusa</li>
+        </ul>
+        <p class="fmt-note">Ideal para quem sente o chamado, mesmo à distância.</p>
+        <a href="https://wa.me/5551981502140?text=Quero%20a%20formação%20online" target="_blank" class="btn btn-outline">Inscrever-se</a>
+      </div>
+    </div>
+    <p style="margin-top:24px;font-size:13px;font-style:italic;color:oklch(40% 0.03 148);">Não é obrigatório atender pessoas. A formação respeita o caminho individual de cada alma.</p>
+  </div>
+</section>
+
+<!-- BIO -->
+<section class="sec light">
+  <div class="wrap">
+    <div class="bio-wrap">
+      <div class="bio-photo-wrap r">
+        <div class="bio-photo">
+          <img src="assets/kelen-sorrindo.png" alt="Kelen Silva">
+        </div>
+        <div class="bio-tags">
+          <span class="bio-tag">Educadora Energética</span>
+          <span class="bio-tag">Mestre Reiki</span>
+          <span class="bio-tag">Facilitadora Kundalini</span>
+        </div>
+      </div>
+      <div class="bio-right r">
+        <div class="chapter" style="margin-bottom:32px;">
+          <div class="chapter-line"></div>
+          <span class="chapter-label">Quem te guia</span>
+        </div>
+        <div class="name">Kelen<br>Silva</div>
+        <div class="role">Criadora do Método Renascimento Kundalini</div>
+        <p>Kelen atua há anos guiando pessoas em processos profundos de despertar da consciência, ativação energética e integração espiritual.</p>
+        <p>Sempre com condução ética, amorosa e ancorada — longe dos excessos que frequentemente cercam o universo Kundalini.</p>
+        <div class="bio-quote">
+          <p>"Sua missão é guiar almas no processo de lembrança de quem elas são."</p>
+        </div>
+        <div class="bio-btns">
+          <a href="https://www.instagram.com/kelensilva.kundalini/" target="_blank" class="btn btn-outline" style="color:var(--text-dark);border-color:var(--rule-light);">Instagram</a>
+          <a href="https://wa.me/5551981502140" target="_blank" class="btn">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRASE FINAL -->
+<div class="frase">
+  <blockquote class="r">"Você não sai a mesma pessoa que entrou. Você sai mais <span class="it">inteira</span>, mais consciente, mais presente."</blockquote>
+  <div class="frase-pills r">
+    <span class="frase-pill">Clareza espiritual</span>
+    <span class="frase-pill">Confiança energética</span>
+    <span class="frase-pill">Presença no corpo</span>
+    <span class="frase-pill">Estados elevados de consciência</span>
+    <span class="frase-pill">Propósito e serviço</span>
+  </div>
+</div>
+
+<!-- CTA FINAL -->
+<section class="cta">
+  <div class="cta-inner r">
+    <h2>Pronta para o seu<br><span class="it">Renascimento?</span></h2>
+    <p>Entre em contato para saber mais sobre a formação, tirar dúvidas ou garantir a sua vaga. As vagas presenciais são apenas 10.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/5551981502140?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20Formação%20Renascimento%20Kundalini" target="_blank" class="btn btn-gold">Conversar pelo WhatsApp</a>
+      <a href="https://www.instagram.com/kelensilva.kundalini/" target="_blank" class="btn btn-outline">Ver no Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="assets/logo-kelen.png" alt="Kelen Silva">
+  <p>© 2026 Kelen Silva — Renascimento Kundalini</p>
+</footer>
+
+<!-- TWEAKS -->
+<div id="tweaks-panel">
+  <h4>Tweaks</h4>
+  <div class="tw-row">
+    <label>Tom do acento</label>
+    <select id="tw-accent">
+      <option value="forest">Verde Floresta (padrão)</option>
+      <option value="dark">Preto Profundo</option>
+      <option value="earth">Terra / Âmbar</option>
+    </select>
+  </div>
+  <div class="tw-row">
+    <label>Tamanho do texto base</label>
+    <input type="range" id="tw-size" min="16" max="21" step="1" value="18">
+  </div>
+</div>
+
+<script>
+// NAV scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 50), {passive:true});
+
+// Reveal
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+}, {threshold: .1});
+document.querySelectorAll('.r').forEach(el => io.observe(el));
+
+// Manifesto
+const mio = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const lines = e.target.querySelectorAll('.manifesto-line');
+      lines.forEach((l, i) => setTimeout(() => l.classList.add('vis'), i * 180));
+      mio.unobserve(e.target);
+    }
+  });
+}, {threshold:.2});
+const ml = document.querySelector('.manifesto-lines');
+if (ml) mio.observe(ml);
+
+// Módulos accordion
+document.querySelectorAll('.mod-head').forEach(head => {
+  head.addEventListener('click', () => {
+    const item = head.parentElement;
+    const body = item.querySelector('.mod-body');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.mod-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.mod-body').style.maxHeight = '0';
+    });
+    if (!open) {
+      item.classList.add('open');
+      body.style.maxHeight = body.scrollHeight + 'px';
+    }
+  });
+});
+
+// Tweaks
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accent": "forest",
+  "size": 20
+}/*EDITMODE-END*/;
+let tw = {...TWEAK_DEFAULTS};
+
+const palettes = {
+  forest: { '--forest':'oklch(13% 0.05 148)', '--forest-2':'oklch(18% 0.06 148)', '--forest-3':'oklch(24% 0.06 148)' },
+  dark:   { '--forest':'oklch(7% 0.01 0)',    '--forest-2':'oklch(12% 0.01 0)',    '--forest-3':'oklch(18% 0.01 0)' },
+  earth:  { '--forest':'oklch(15% 0.04 35)',  '--forest-2':'oklch(20% 0.05 35)',   '--forest-3':'oklch(26% 0.05 35)' },
+};
+
+function applyTw() {
+  const root = document.documentElement;
+  const p = palettes[tw.accent] || palettes.forest;
+  Object.entries(p).forEach(([k,v]) => root.style.setProperty(k, v));
+  document.body.style.fontSize = tw.size + 'px';
+  document.getElementById('tw-accent').value = tw.accent;
+  document.getElementById('tw-size').value = tw.size;
+}
+
+document.getElementById('tw-accent').addEventListener('change', e => {
+  tw.accent = e.target.value; applyTw();
+  window.parent.postMessage({type:'__edit_mode_set_keys', edits: tw}, '*');
+});
+document.getElementById('tw-size').addEventListener('input', e => {
+  tw.size = +e.target.value; applyTw();
+  window.parent.postMessage({type:'__edit_mode_set_keys', edits: tw}, '*');
+});
+
+window.addEventListener('message', e => {
+  if (e.data?.type === '__activate_edit_mode')   document.getElementById('tweaks-panel').style.display = 'block';
+  if (e.data?.type === '__deactivate_edit_mode') document.getElementById('tweaks-panel').style.display = 'none';
+});
+window.parent.postMessage({type:'__edit_mode_available'}, '*');
+applyTw();
+</script>
+</body>
+</html>
